@@ -13,7 +13,6 @@ public class MainVerticle extends AbstractVerticle {
         router.get("/api/hello").handler(this::helloVertx);
         router.get("/api/hello/:name").handler(this::helloName);
         vertx.createHttpServer().requestHandler(router).listen(8080);
-
     }
 
     void helloVertx(RoutingContext ctx) {
