@@ -13,4 +13,5 @@ public class HelloVerticle extends AbstractVerticle {
             msg.reply("Hello world " + name);
         });
     }
+
 }
